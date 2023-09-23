@@ -1,7 +1,7 @@
 import {useQuery} from 'react-query'
 
 const getEmployees= async() => {
-    const response = await fetch("http://localhost:6500/employees")
+    const response = await fetch("http://api.server.com:6500/employees")
     return await response.json()
 }
 
