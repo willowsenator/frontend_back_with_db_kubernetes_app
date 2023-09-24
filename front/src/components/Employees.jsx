@@ -1,7 +1,9 @@
 import {useQuery} from 'react-query'
 
 const getEmployees= async() => {
-    const response = await fetch("http://api.server.com:6500/employees")
+    const protocol = window.location.protocol
+    const url = protocol + "//api.server.com/employees"
+    const response = await fetch(url)
     return await response.json()
 }
 

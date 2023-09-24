@@ -13,7 +13,7 @@ spec:
               service:
                 name: front
                 port:
-                  number: 80          
+                  number: 80    
     - host: api.server.com
       http:
         paths:
